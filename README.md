@@ -1,17 +1,17 @@
 # FAT32-reader
 
 ## Description
-compile with `gcc -o fat32-reader.exe fat32-reader.c`
+编译 `gcc -o fat32-reader.exe fat32-reader.c`
 
-usage: `fat32-reader.exe <image file>`
+用法: `fat32-reader.exe <image file>`
 
 ## TODO
-- [ ] auto detect FAT32 partition number
-- [ ] make the output clearer
-- [ ] read the file content
+- [ ] 自动获取分区对应id
+- [ ] 让输出内容清晰一点
+- [ ] 读取文件内容
 ## FIXME
-- [ ] read DBR to get partition info
-- [ ] make file name copying more concise
+- [ ] 从DBR获取分区信息
+- [ ] 优化文件名比对
 ## DONE
-- [x] Read files from a specific partition
-- [x] Find the cluster number list of a file
+- [x] 从给定分区找到文件
+- [x] 找到文件簇链
